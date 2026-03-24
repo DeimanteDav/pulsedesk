@@ -65,22 +65,7 @@ cd pulsedesk
 
 ### 3. Configure the application
 
-Create `src/main/resources/application.properties`:
-
-```properties
-spring.application.name=comment-to-ticket-triage
-
-spring.datasource.url=jdbc:h2:mem:testdb
-spring.datasource.driverClassName=org.h2.Driver
-spring.datasource.username=sa
-spring.datasource.password=
-spring.jpa.hibernate.ddl-auto=update
-spring.h2.console.enabled=true
-
-huggingface.api.token=${HF_TOKEN}
-```
-
-Then set your token as an environment variable:
+Set your token as an environment variable:
 
 ```bash
 # Windows
