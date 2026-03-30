@@ -22,9 +22,9 @@ async function submitComment() {
         input.value = ''
 
         if (data.ticket) {
-            showStatus(`✓ Ticket created — ${data.ticket.priority} priority ${data.ticket.category} issue.`, 'success')
+            showStatus(`Ticket created — ${data.ticket.priority} priority ${data.ticket.category} issue.`, 'success')
         } else {
-            showStatus('✓ Comment submitted — no ticket needed.', 'success')
+            showStatus('Comment submitted — no ticket needed.', 'success')
         }
 
         
